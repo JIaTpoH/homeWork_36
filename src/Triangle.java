@@ -10,4 +10,8 @@ public class Triangle {
       System.out.println("Ошибка: невозможно построить треугольник с заданными сторонами.");
     }
   }
+
+  public static boolean checkSides(int a, int b, int c) {
+    return a + b > c && a + c > b && b + c > a;
+  }
 }
